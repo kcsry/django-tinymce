@@ -1,17 +1,14 @@
 #!/usr/bin/env python
 from setuptools import setup, find_packages
-import metadata
 
-app_name = metadata.name
-version = metadata.version
 def read(filename):
     with open(filename) as fp:
         return fp.read()
 long_description = read('README.md')
 
 setup(
-    name = "django-%s" % app_name,
-    version = version,
+    name = "django-tinymce",
+    version = '2.0-dev-20140927',
     packages = find_packages(),
     include_package_data = True,
     author = "Aljosa Mohorovic",
